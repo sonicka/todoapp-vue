@@ -20,7 +20,9 @@ const emit = defineEmits<{
         class="w-full max-w-md rounded-lg border border-gray-300 bg-gray-100 p-5 cursor-pointer hover:border-gray-400 hover:bg-white"
         @click="emit('apply', template)"
       >
-        <h5 class="pb-1">{{ template.title }}</h5>
+        <p class="text-xl font-semibold pb-1 leading-tight">
+          {{ template.title }}
+        </p>
         <span>Priorita: {{ PRIORITY_LABEL[template.defaults.priority] }}</span>
       </div>
     </div>

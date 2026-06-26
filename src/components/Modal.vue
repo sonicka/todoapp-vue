@@ -19,9 +19,9 @@ const emit = defineEmits<{
       @click.stop
       class="p-5 relative w-full max-w-md rounded-2xl bg-white shadow-2xl"
     >
-      <h4 v-if="title" class="text-lg font-semibold text-gray-800">
+      <h3 v-if="title" class="text-lg font-semibold text-gray-800">
         {{ title }}
-      </h4>
+      </h3>
 
       <div>
         <slot />
