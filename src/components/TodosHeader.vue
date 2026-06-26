@@ -22,10 +22,19 @@ const emit = defineEmits<{
       :body="`Celkem ${totalTodosNumber} ${getTotalPlural(totalTodosNumber)}, ${finishedTodosNumber} ${getFinishedPlural(finishedTodosNumber)}.`"
     />
 
-    <div className="flex w-full gap-3 items-center justify-between">
+    <div
+      class="flex flex-col-reverse sm:flex-row w-full gap-3 items-start sm:items-center justify-between"
+    >
       <button
         @click="emit('addNewTodo')"
-        :class="[btn, 'bg-blue-600', 'text-white', 'hover:bg-gray-800']"
+        :class="[
+          btn,
+          'bg-blue-600',
+          'text-white',
+          'hover:bg-gray-800',
+          'whitespace-nowrap',
+          'shrink-0',
+        ]"
       >
         + Nový úkol
       </button>
