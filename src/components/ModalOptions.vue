@@ -9,7 +9,7 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <div className="flex flex-col gap-2 pt-10">
+  <div className="flex flex-col gap-2 pt-8">
     <button
       @click="emit('goToForm')"
       :class="[btn, 'bg-blue-600', 'text-white', 'hover:bg-gray-800']"
