@@ -1,0 +1,66 @@
+# TODO App (Vue)
+
+A simple TODO application built with Vue 3 (Composition API) and Tailwind CSS.
+
+The app allows users to create, manage, and organize tasks with priorities, filtering by status, and a modal-based task creation flow.
+
+It uses mock data for todos and predefined templates.
+
+Frontend-only application with no backend or data persistence.
+
+---
+
+### Deployed preview available [here]().
+
+### Same app built in React available [here](https://github.com/sonicka/todoapp-react/).
+
+---
+
+## Tech Stack
+
+- Vue 3 (Composition API)
+- TypeScript
+- Tailwind CSS
+
+---
+
+## Features
+
+### Overview
+
+- Shows total number of tasks and number of unfinished tasks
+- Displays button for creating a new task and option to filter out only unfinished tasks
+
+### Task List
+
+- Displays all tasks, each shows title, priority and status
+- Tasks are sorted by:
+  - **Status** (unfinished first)
+  - **Priority** (High → Normal → Low)
+- Filter option:
+  - “Show only unfinished tasks”
+- Tasks can be set as finished or deleted
+
+### Create New Task
+
+A "New Task" button opens a modal with two options:
+
+#### 1. Create from scratch
+
+- Opens a form for manual task creation
+- User fills in the task title and chooses priority
+
+#### 2. Create from template
+
+- Shows predefined templates
+- Selecting a template pre-fills the form
+- User can still edit before saving
+
+---
+
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
