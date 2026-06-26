@@ -10,7 +10,7 @@ Frontend-only application with no backend or data persistence.
 
 ---
 
-### Deployed preview available [here]().
+### Deployed preview available [here](https://todoapp-vue-psi.vercel.app/).
 
 ### Same app built in React available [here](https://github.com/sonicka/todoapp-react/).
 
