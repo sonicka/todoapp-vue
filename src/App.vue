@@ -37,7 +37,7 @@ const {
 </script>
 
 <template>
-  <div class="flex justify-center flex-col gap-8 py-4">
+  <div class="flex flex-col items-center gap-8 py-4 px-4 sm:px-6 lg:px-0">
     <TodosHeader
       :total-todos-number="totalTodosNumber"
       :finished-todos-number="finishedTodosNumber"
