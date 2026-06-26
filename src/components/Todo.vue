@@ -33,21 +33,14 @@ const PRIORITY_COLOR: Record<Priority, string> = {
       <button
         v-if="todo.status === STATUS.planned"
         @click="emit('finishTodo', todo.id)"
-        :class="[btn, 'bg-gray-600', 'text-white', 'hover:bg-gray-800']"
+        :class="`${btn} bg-gray-600 text-white hover:bg-gray-700`"
       >
         Dokončit
       </button>
 
       <button
         @click="emit('deleteTodo', todo.id)"
-        :class="[
-          btn,
-          'border',
-          'border-gray-300',
-          'text-gray-700',
-          'bg-gray-100',
-          'hover:bg-white',
-        ]"
+        :class="`${btn} border border-gray-300 text-gray-700 bg-gray-100 hover:bg-white`"
       >
         Odstranit
       </button>

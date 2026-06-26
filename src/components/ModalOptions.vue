@@ -9,16 +9,16 @@ const emit = defineEmits<{
 </script>
 
 <template>
-  <div className="flex flex-col gap-2 pt-8">
+  <div class="flex flex-col gap-2 pt-8">
     <button
       @click="emit('goToForm')"
-      :class="[btn, 'bg-blue-600', 'text-white', 'hover:bg-gray-800']"
+      :class="`${btn} bg-blue-600 text-white hover:bg-blue-700 whitespace-nowrap shrink-0`"
     >
       Vytvořit od začátku
     </button>
     <button
       @click="emit('goToTemplates')"
-      :class="[btn, 'bg-gray-600', 'text-white', 'hover:bg-gray-800']"
+      :class="`${btn} bg-gray-600 text-white hover:bg-gray-700`"
     >
       Vytvořit ze šablony
     </button>

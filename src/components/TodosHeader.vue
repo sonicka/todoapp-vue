@@ -27,14 +27,7 @@ const emit = defineEmits<{
     >
       <button
         @click="emit('addNewTodo')"
-        :class="[
-          btn,
-          'bg-blue-600',
-          'text-white',
-          'hover:bg-gray-800',
-          'whitespace-nowrap',
-          'shrink-0',
-        ]"
+        :class="`${btn} bg-blue-600 text-white hover:bg-blue-700 whitespace-nowrap shrink-0`"
       >
         + Nový úkol
       </button>
