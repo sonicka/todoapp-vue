@@ -55,7 +55,7 @@ export function useModal(addTodo: (title: string, priority: Priority) => void) {
   return {
     todoTitle,
     priority,
-    modalTitle: titleOfModal.value,
+    modalTitle: titleOfModal,
     modalState,
     isOpen,
     open,

@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { TodosTemplates } from "../data/todos";
+import { PRIORITY_LABEL } from "../shared/constants";
 import { btn } from "../shared/styles";
 import type { Template } from "../shared/types";
 
@@ -19,8 +20,8 @@ const emit = defineEmits<{
         class="w-full max-w-md rounded-lg border border-gray-300 bg-gray-100 p-5 cursor-pointer hover:border-gray-400 hover:bg-white"
         @click="emit('apply', template)"
       >
-        <h5>{{ template.title }}</h5>
-        <span>{{ template.defaults.title }}</span>
+        <h5 class="pb-1">{{ template.title }}</h5>
+        <span>Priorita: {{ PRIORITY_LABEL[template.defaults.priority] }}</span>
       </div>
     </div>
 
